@@ -1,0 +1,235 @@
+ <!-- FlatFy Theme - Andrea Galanti /-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <title>Zero To Hireable</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<style>
+		a{
+			color: #99e;
+		}
+	</style>
+	<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- FullScreen -->
+    <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Zero To Hireable</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">No Degree Is Required To Be Awesome</h3>
+		</div>    
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down "> 
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+			</div>
+		</div>
+    </div>
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home">Zero To Hireable</a>
+			</div>
+		</div>
+	</nav> 
+	
+	<!-- What is -->
+	<div id="whatis" class="content-section-b content" style="border-top: 0">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<h1>Yep</h1>
+					<p class="lead">University is a good place to study. But unfortunately, it's expensive, and you need to take years of your life to be in one. <br></p>
+					<p class="lead">It makes me think, why can't we make a site that shares all of the (free and paid) resources required to get a decent job without any degree? So here they are! Choose which one of your interest, and learn to become a hireable employee without any degree! <a href="#" data-toggle="modal" data-target="#myModal">More about us</a></p>
+					<!-- <p>By the way, for now I want to make this site only for resource listings, but along the way, we might get another expert on the board, create consult-by-skype functionality, create a forum, and other cool stuffs!</p> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'backend'" data-target="#form">Backend Web Developer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'frontend'" data-target="#form">Frontend Developer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'android'" data-target="#form">Android Developer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'iphone'" data-target="#form">iPhone Developer</a></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'desktop'" data-target="#form">Desktop Developer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'mac'" data-target="#form">Mac Developer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'designer'" data-target="#form">Visual Designer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'backend'" data-target="#form">Movie Editor</a></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'entrepreneur'" data-target="#form">Entrepreneur</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'marketer'" data-target="#form">Marketer</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'finance'" data-target="#form">Finance</a></div>
+				<div class="col-md-3 text-center" style="padding: 70px 0 10px"><a href="#" data-toggle="modal" @click="learn = 'others'" data-target="#form">Others</a></div>
+			</div>
+		</div>
+		<div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">We're in private beta!</h4>
+		      </div>
+		      <div class="modal-body">
+		        <!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="//satusama.us11.list-manage.com/subscribe/post?u=a2c26d1947f5d37533904a37d&amp;id=12f7ed1f0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				    <div id="mc_embed_signup_scroll">
+				<div class="mc-field-group">
+					<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+					<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL">
+					<input type="hidden" :value="learn" name="LEARN">
+				</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a2c26d1947f5d37533904a37d_12f7ed1f0c" tabindex="-1" value=""></div>
+				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary button"></div>
+				    </div>
+				</form>
+				</div>
+
+				<!--End mc_embed_signup-->
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+	</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Halu from Indonesia!</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>My name is Imam Assidiqqi, I'm the founder of this Startup, a full-time software engineer on an Indonesian startup, and I'm a zero to hireable man.</p>
+
+			<p>I'm not a college graduate, I've learned everything about developing a web application with Laravel by myself, but in the end, I'm getting 3 job offers. So I'm pretty much know how to hustle from zero to hirable, and I know that it's pretty hard.</p>
+
+			<p>Because I know how hard it is to be a zero to hirable, and there is little to none resource that explains completely about this subject, I make this startup.</p>
+
+			<p>I hope one day I can make this site better than just a list of resources. Adding some cool features like video chat for consultation, a forum, etc. But for now, I have to make it as simple as I can.</p>
+
+			<p>Thank you for visiting!</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	
+	
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="footer-title">ZeroToHireable.us © 2016</h3>
+      
+          </div> <!-- /col-xs-7 -->
+        </div>
+      </div>
+    </footer>
+
+	<script src="https://unpkg.com/vue"></script>
+	<script>
+		data = new Vue({
+			el: '.content',
+			data: {
+				learn: null
+			}
+		});
+	</script>
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+</body>
+
+</html>
